@@ -1,18 +1,14 @@
 import { Application, Sprite, Assets, Graphics } from "pixi.js"
-import {BackGround} from "./BackGround"
-
-let imageSprite: Sprite|null = null
+import { BackGround } from "./BackGround"
+import { Field } from "./Field"
 
 const app = new Application()
-await app.init({ background: '#808080', resizeTo: window})
+await app.init({ background: '#808080', resizeTo: window })
 
-Assets.add({alias: 'image1', src: './resources/decks/frieren/1.png'})
-Assets.load(['image1']).then(res => {
-  imageSprite = new Sprite(res['image1'])
-  imageSprite.scale._x = 0.5
-  imageSprite.scale._y = 0.5
-  imageSprite.anchor.set(0.5); // 中心に揃える
-  app.stage.addChild(imageSprite)
-})
-new BackGround(app)
+//new BackGround(app)
+new Field(app, 0)
+new Field(app, 1)
+new Field(app, 2)
+new Field(app, 3)
+new Field(app, 4)
 document.body.appendChild(app.canvas)
