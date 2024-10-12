@@ -4,7 +4,7 @@ import {BackGround} from "./BackGround"
 let imageSprite: Sprite|null = null
 
 const app = new Application()
-await app.init({ background: '#1099bb', resizeTo: window})
+await app.init({ background: '#808080', resizeTo: window})
 
 Assets.add({alias: 'image1', src: './resources/decks/frieren/1.png'})
 Assets.load(['image1']).then(res => {
