@@ -104,14 +104,14 @@ export class Field {
                 this.direction = 2
                 this.color = this.OTHER_CARD_COLOR
                 break
-            case 12: // ハンド想定
-                this.posX = this.LEFT_X
-                this.posY = this.clockY + this.CARD_SIZE.y + 50
-                this.sizeX = this.CARD_SIZE.x * 5
-                this.sizeY = this.CARD_SIZE.y
-                this.direction = 2
-                this.color = this.HAND_CARD_COLOR
-                break
+            // case 12: // ハンド想定
+            //     this.posX = this.LEFT_X
+            //     this.posY = this.clockY + this.CARD_SIZE.y + 50
+            //     this.sizeX = this.CARD_SIZE.x * 5
+            //     this.sizeY = this.CARD_SIZE.y
+            //     this.direction = 2
+            //     this.color = this.HAND_CARD_COLOR
+            //     break
             default:
                 return
         }
